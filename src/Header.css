@@ -1,35 +1,30 @@
-.header{
-    background-color:#f3756c;
-    color: #fff;
-   
-    text-align: center;
-    font-size: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+.header {
+  background-color: #f3756c;
+  color: #fff;
+
+  text-align: center;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .form > input {
-  width:30%;
+  width: 30%;
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  
 }
 
-
-
 .menu {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   letter-spacing: 2px;
-
-
 }
 
 .menu-item {
