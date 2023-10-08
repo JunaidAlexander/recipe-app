@@ -1,10 +1,11 @@
-import React from 'react'
-import './Header.css'
+import React from "react";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className="header">
       <div className="logo"></div>
+      <h1 className="company">Saucy Spirals</h1>
       <div className="form">
         <input className="search-bar" type="text" placeholder="Search" />
       </div>
@@ -14,7 +15,7 @@ const Header = () => {
         <div className="menu-item">Contact</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
