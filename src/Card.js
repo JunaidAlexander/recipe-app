@@ -1,23 +1,31 @@
 import React from "react";
 import "./Card.css";
 
-const Card = () => {
-  return (
-    <div className="card">
-      <div className="myCard">
-        <div className="innerCard">
-          <div className="frontSide">
-            <p className="title-front">PASTA BAKE WITH SAUSAGE</p>
-            <p className="title-back">Hover Me</p>
-          </div>
-          <div className="backSide">
-            <p className="title">Click For Recipe</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+const Card = props => {
+	const { titleFront, titleBack, recipeText, imageUrl } = props;
+	return (
+		<div className="card">
+			<div className="myCard">
+				<div className="innerCard">
+					<div className="frontSide">
+						<img src={imageUrl} alt={titleFront} className="card-image" />
+						<p className="title-front">
+							{titleFront}
+						</p>
+						<p className="title-back">
+							{titleBack}
+						</p>
+					</div>
+					<div className="backSide">
+						<p className="title">
+							{recipeText}
+						</p>
+						<button>Click  for recipe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Card;
