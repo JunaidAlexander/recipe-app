@@ -11,7 +11,7 @@ const App = () => {
 
       <div>
         <Card
-          titleFront="Baked Gnocchi"
+          titleFront="BAKED GNOCCHI"
           recipeText="Click For Recipe"
           imageUrl="./images/baked-gnocchi.jpg
           "
@@ -20,36 +20,36 @@ const App = () => {
         <Card
           titleFront="PASTA BAKE WITH SAUSAGE"
           recipeText="Click For Recipe"
-          imageUrl="./images/pasta-bake-with-sausage.jpg"
+          imageUrl="https://www.aheadofthyme.com/wp-content/uploads/2022/01/beef-stroganoff-683x1024.jpg"
         />
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="PESTO PENNE PASTA"
           recipeText="Click For Recipe"
           imageUrl="./images/pesto-penne-pasta.jpg"
         />
 
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="FETTUCCINE ALFREDO"
           recipeText="Click For Recipe"
           imageUrl="./images/fettuccine-alfredo.jpg"
         />
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="CHEESY TORTELLINI"
           recipeText="Click For Recipe"
-          imageUrl="./images/cheesy-tortellini.jpg"
+          imageUrl="./images/cheesy-tortellini-.jpg"
         />
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="SHRIMP ALFREDO"
           recipeText="Click For Recipe"
           imageUrl="./images/shrimp-alfredo.jpg"
         />
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="SPAGHETTI AND MEATBALLS"
           recipeText="Click For Recipe"
           imageUrl="./images/spaghetti-and-meatballs.jpg"
         />
         <Card
-          titleFront="PASTA BAKE WITH SAUSAGE"
+          titleFront="VEGETARIAN BOLOGNESE"
           recipeText="Click For Recipe"
           imageUrl="./images/vegetarian-bolognese.jpg"
         />
