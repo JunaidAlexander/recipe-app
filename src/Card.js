@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 
 const Card = (props) => {
-  const { titleFront, titleBack, recipeText, imageUrl } = props;
+  const { titleFront, titleBack, recipeText, imageUrl, dishName } = props;
   return (
     <div className="card">
       <div className="myCard">
@@ -17,6 +17,7 @@ const Card = (props) => {
             <button className="btn">Recipe</button>
           </div>
         </div>
+        <h5 className="dish">{dishName}</h5>
       </div>
     </div>
   );
