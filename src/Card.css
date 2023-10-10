@@ -122,5 +122,6 @@ img {
   cursor: pointer;
 }
 .dish {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
