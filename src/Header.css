@@ -12,6 +12,7 @@
 .form > input {
   width: 30%;
   padding: 10px;
+  margin-left: 910px;
   margin-top: -15px;
   margin-bottom: 6px;
   border: 1px solid #ccc;
@@ -28,4 +29,5 @@
   padding-left: 40px;
   font-weight: 300;
   font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
