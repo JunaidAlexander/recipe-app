@@ -1,8 +1,7 @@
 .card {
-  display: grid !important;
+  display: inline-block;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 10px !important;
-
 }
 
 .myCard {
@@ -10,24 +9,23 @@
   width: 230px;
   height: 300px;
   perspective: 1000px;
-  margin-top: 90px;
+  margin-top: 60px;
   margin-left: 80px;
   padding: 20px;
   text-align: center;
 }
-
 
 .title {
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
   margin: 0;
-  
 }
 
 .title-front {
   position: absolute;
-  top:0;
+  color: black;
+  top: 0;
 }
 
 .innerCard {
@@ -62,20 +60,19 @@
   font-weight: 700;
 }
 
-
 .frontSide,
 .frontSide::before {
-  background: linear-gradient(43deg,
-      rgb(65, 88, 208) 0%,
-      rgb(200, 80, 192) 46%,
-      rgb(255, 204, 112) 100%);
-
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
 }
 
 .backSide,
 .backSide::before {
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-
+  background-color: #ba704f;
 }
 
 .backSide {
@@ -111,9 +108,20 @@
   }
 }
 
-
 img {
   width: 230px;
   height: 300px;
   border-radius: 1rem;
+}
+.btn {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dish {
+  margin-top: 40px;
+  padding-bottom: 40px;
 }

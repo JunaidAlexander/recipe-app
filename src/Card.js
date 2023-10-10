@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Card.css";
 
 const Card = (props) => {
+<<<<<<< HEAD
   const { titleFront, titleBack, recipeText, imageUrl } = props;
 
   // Define state to hold the list of recipes
@@ -20,6 +21,9 @@ const Card = (props) => {
     setRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
   };
 
+=======
+  const { titleFront, titleBack, recipeText, imageUrl, dishName } = props;
+>>>>>>> 33d1598c5732d3145956173071d0e3b458c59e86
   return (
     <div className="card">
       <div className="myCard">
@@ -31,9 +35,16 @@ const Card = (props) => {
           </div>
           <div className="backSide">
             <p className="title">{recipeText}</p>
+<<<<<<< HEAD
             <button onClick={addRecipe}>Click for recipe</button>
           </div>
         </div>
+=======
+            <button className="btn">Recipe</button>
+          </div>
+        </div>
+        <h5 className="dish">{dishName}</h5>
+>>>>>>> 33d1598c5732d3145956173071d0e3b458c59e86
       </div>
     </div>
   );
