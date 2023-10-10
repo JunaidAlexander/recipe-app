@@ -8,7 +8,6 @@ const App = () => {
 	return (
 		<div>
 			<Header />
-
 			<div>
 				<Card
 					titleFront="PASTA BAKE WITH SAUSAGE"
@@ -36,13 +35,13 @@ const App = () => {
 					recipeText="Click For Recipe"
 					imageUrl="./images/fettuccine-alfredo.jpg"
 				/>
-        <Card
+				<Card
 					titleFront="PASTA BAKE WITH SAUSAGE"
 					titleBack="Hover Me"
 					recipeText="Click For Recipe"
 					imageUrl="./images/cheesy-tortellini.jpg"
 				/>
-        <Card
+				<Card
 					titleFront="PASTA BAKE WITH SAUSAGE"
 					titleBack="Hover Me"
 					recipeText="Click For Recipe"
