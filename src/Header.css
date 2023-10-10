@@ -22,18 +22,6 @@
   font-weight: 700;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.menu-item {
-  padding: 10px;
-}
-
 .company {
   text-align: left;
   padding-top: 50px;

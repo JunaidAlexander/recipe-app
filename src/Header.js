@@ -10,11 +10,6 @@ const Header = () => {
       <div className="form">
         <input className="search-bar" type="text" placeholder="Search" />
       </div>
-      <div className="menu">
-        <div className="menu-item">Home</div>
-        <div className="menu-item">About</div>
-        <div className="menu-item">Contact</div>
-      </div>
     </div>
   );
 };
