@@ -62,12 +62,10 @@
 
 .frontSide,
 .frontSide::before {
-  background: linear-gradient(
-    43deg,
-    rgb(65, 88, 208) 0%,
-    rgb(200, 80, 192) 46%,
-    rgb(255, 204, 112) 100%
-  );
+  background: linear-gradient(43deg,
+      rgb(65, 88, 208) 0%,
+      rgb(200, 80, 192) 46%,
+      rgb(255, 204, 112) 100%);
 }
 
 .backSide,
@@ -108,9 +106,9 @@
   }
 }
 
-img {
+.card-image {
   width: 230px;
-  height: 300px;
+  height: 400px;
   border-radius: 1rem;
 }
 
@@ -122,6 +120,7 @@ img {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .dish {
   margin-top: 40px;
   padding-bottom: 40px;
