@@ -1,25 +1,27 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Card from "./Card";
 import Recipe from "./Recipe";
+import Home from "./Home";
 
 function App() {
-
-	const [visible,setVisible]=useState(false)
-	function handleVisible(){
-		setVisible(!visible)
+	const [visible, setVisible] = useState(false);
+	function handleVisible() {
+		setVisible(!visible);
 	}
 
 	return (
 		<Router>
 			<div>
 				<Header />
+
 				<Routes>
-					<Route path="/recipe/:uuid" element={<Recipe />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/recipe/:id" element={<Recipe />} />
 				</Routes>
 
-				<div onClick={handleVisible}>
+				{/* <div onClick={handleVisible}>
 					<Card
 						recipeText="Click For Recipe"
 						imageUrl="./images/baked-gnocchi.jpg"
@@ -62,7 +64,12 @@ function App() {
 						imageUrl="./images/vegetarian-bolognese.jpg"
 						dishName="VEGETARIAN BOLOGNESE"
 					/>
-				</div>
+					<Card
+						recipeText="Click For Recipe"
+						imageUrl="./images/vegetarian-bolognese.jpg"
+						dishName="VEGETARIAN BOLOGNESE"
+					/>
+				</div> */}
 			</div>
 		</Router>
 	);

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 const Card = props => {
-	const { titleFront, titleBack, recipeText, imageUrl, dishName, uuid } = props;
+	const { titleFront, titleBack, recipeText, imageUrl, dishName, uuid, id } = props;
 
 	const [recipes, setRecipes] = useState([]);
 
@@ -40,7 +40,7 @@ const Card = props => {
 							<p className="title">
 								{recipeText}
 							</p>
-							<button className="btn" onClick={handleRecipeClick}>
+							<button className="btn" onClick={() => navigate("/Recipe/" + id)}>
 								Recipe
 							</button>
 						</div>

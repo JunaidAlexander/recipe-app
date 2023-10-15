@@ -1,10 +1,20 @@
-import React, { useState } from "react";
-import "./Recipe.css";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Recipe = () => {
+	const navigate = useNavigate();
+	const [selectedRecipe, setSelectedRecipe] = useState(null);
+	const { id } = useParams();
+	useEffect(() => {
+		setSelectedRecipe(recipeData.find(recipe => recipe.uuid === id));
+		console.log(recipeData.find(recipe => recipe.uuid === id));
+	}, []);
+
+	console.log(id);
 	const recipeData = [
 		{
-			uuid: 1,
+			uuid: "1",
 			id: 1,
 			title: "Pasta Bake With Sausage",
 			ingredients: [
@@ -18,7 +28,7 @@ const Recipe = () => {
 			]
 		},
 		{
-			uuid: 2,
+			uuid: "2",
 			id: 2,
 			title: "Creamy Tomato Pasta",
 			ingredients: [
@@ -33,48 +43,27 @@ const Recipe = () => {
 		}
 	];
 
-	const [selectedRecipe, setSelectedRecipe] = useState(null);
-
-	const handleRecipeClick = uuid => {
-		setSelectedRecipe(recipeData.find(recipe => recipe.uuid === uuid));
+	const handleBackButtonClick = () => {
+		setSelectedRecipe(null);
 	};
 
 	return (
 		<div>
-			<div className="recipe-list">
-				{/* {recipeData.map(recipe =>
-					<div
-						key={recipe.uuid}
-						className="recipe-item"
-						onClick={() => handleRecipeClick(recipe.uuid)}
-					>
-						<img
-							src={`./images/${recipe.title.replace(/\s/g, "-")}.jpg`}
-							alt={recipe.title}
-						/>
-						<h2>
-							{recipe.title}
-						</h2>
-					</div>
-				)}
-			</div>
-			<div className="recipe-details">
-				{selectedRecipe &&
-					<div>
-						<h2>
-							{selectedRecipe.title}
-						</h2>
-						<p>Ingredients</p>
-						<ul>
-							{selectedRecipe.ingredients.map((ingredient, index) =>
-								<li key={index} className="recipe-ingredients">
-									{ingredient}
-								</li>
-							)}
-						</ul>
-						<button>Back</button>
-					</div>}
-			</div> */}
+			{selectedRecipe &&
+				<div className="recipe-details">
+					<h2>
+						{selectedRecipe.title}
+					</h2>
+					<p>Ingredients</p>
+					<ul>
+						{selectedRecipe.ingredients.map((ingredient, index) =>
+							<li key={index} className="recipe-ingredients">
+								{ingredient}
+							</li>
+						)}
+					</ul>
+					<button onClick={() => navigate("/")}>Back</button>
+				</div>}
 		</div>
 	);
 };
