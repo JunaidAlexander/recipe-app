@@ -1,0 +1,6 @@
+.Card {
+  display: flex; /* Change from "inline-block" to "flex" */
+  flex-wrap: wrap; /* This allows the items to wrap onto multiple lines if needed */
+  gap: 10px;
+  /* Other CSS styles for your cards */
+}

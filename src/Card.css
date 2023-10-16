@@ -1,8 +1,3 @@
-.card {
-  display: inline-block;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 10px !important;
-}
 
 .myCard {
   background-color: transparent;

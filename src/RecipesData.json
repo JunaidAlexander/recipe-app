@@ -7,8 +7,33 @@
 		},
 		{
 			"id": "2",
-			"imageUrl": "./images/beef-stroganoff-683x1024.jpg",
+			"imageUrl": "https://www.aheadofthyme.com/wp-content/uploads/2022/01/beef-stroganoff-683x1024.jpg",
 			"dishName": "PASTA & SAUSAGE"
+		},
+		{
+			"id": "3",
+			"imageUrl": "./images/pesto-penne-pasta.jpg",
+			"dishName": "PESTO PENNE PASTA"
+		},
+		{
+			"id": "4",
+			"imageUrl": "./images/fettuccine-alfredo.jpg",
+			"dishName": "FETTUCCINE ALFREDO"
+		},
+		{
+			"id": "5",
+			"imageUrl": "/images/cheesy-tortellini-.jpg",
+			"dishName": "CHEESY TORTELLINI"
+		},
+		{
+			"id": "6",
+			"imageUrl": "./images/shrimp-alfredo.jpg",
+			"dishName": "SHRIMP ALFREDO"
+		},
+		{
+			"id": "7",
+			"imageUrl": "/images/spaghetti-and-meatballs.jpg",
+			"dishName": "SPAGHETTI MEATBALLS"
 		}
 	]
 }

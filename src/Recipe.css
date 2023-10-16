@@ -1,0 +1,8 @@
+.recipe-details {
+  display: grid;
+  place-items: center; /* This shorthand property centers the content both horizontally and vertically */
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: lightgray;
+  BACKGROUND-COLOR: #f5f5f5;
+}

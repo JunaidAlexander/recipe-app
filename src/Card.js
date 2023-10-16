@@ -3,7 +3,15 @@ import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 const Card = props => {
-	const { titleFront, titleBack, recipeText, imageUrl, dishName, uuid, id } = props;
+	const {
+		titleFront,
+		titleBack,
+		recipeText,
+		imageUrl,
+		dishName,
+		uuid,
+		id
+	} = props;
 
 	const [recipes, setRecipes] = useState([]);
 
@@ -24,32 +32,32 @@ const Card = props => {
 	};
 
 	return (
-			<div className="card">
-				<div className="myCard">
-					<div className="innerCard">
-						<div className="frontSide">
-							<img src={imageUrl} alt={titleFront} className="card-image" />
-							<p className="title-front">
-								{titleFront}
-							</p>
-							<p className="title-back">
-								{titleBack}
-							</p>
-						</div>
-						<div className="backSide">
-							<p className="title">
-								{recipeText}
-							</p>
-							<button className="btn" onClick={() => navigate("/Recipe/" + id)}>
-								Recipe
-							</button>
-						</div>
+		<div className="Card">
+			<div className="myCard">
+				<div className="innerCard">
+					<div className="frontSide">
+						<img src={imageUrl} alt={titleFront} className="card-image" />
+						<p className="title-front">
+							{titleFront}
+						</p>
+						<p className="title-back">
+							{titleBack}
+						</p>
 					</div>
-					<h5 className="dish">
-						{dishName}
-					</h5>
+					<div className="backSide">
+						<p className="title">
+							{recipeText}
+						</p>
+						<button className="btn" onClick={() => navigate("/Recipe/" + id)}>
+							Recipe
+						</button>
+					</div>
 				</div>
+				<h5 className="dish">
+					{dishName}
+				</h5>
 			</div>
+		</div>
 	);
 };
 

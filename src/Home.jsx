@@ -3,6 +3,8 @@ import Card from "./Card";
 import { useNavigate } from "react-router-dom";
 import  json  from "./RecipesData.json";
 import {useState} from "react"
+import "./Home.css";
+
 
 const Home = () => {
 	const [recipes,setRecipes] = useState(json.data || [])
@@ -10,8 +12,7 @@ const Home = () => {
 	console.log(json.data);
 
 	return (
-		<div>
-			
+		<div className="Card">
 				{recipes.length > 0  &&  recipes.map((recipe) => (
 				<div key={recipe.id}>
 					<Card
@@ -21,6 +22,7 @@ const Home = () => {
 					button="Recipe"
 					id={recipe.id}
 				/>
+				
 				</div>
 				))}
 			

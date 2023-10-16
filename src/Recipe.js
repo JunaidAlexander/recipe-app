@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "./Recipe.css";
 
 const Recipe = () => {
 	const navigate = useNavigate();
@@ -27,6 +28,7 @@ const Recipe = () => {
 				"1/2 cup grated Parmesan cheese"
 			]
 		},
+
 		{
 			uuid: "2",
 			id: 2,
@@ -39,6 +41,81 @@ const Recipe = () => {
 				"1 (16 ounce) container cottage cheese",
 				"2 cups shredded mozzarella cheese",
 				"1/2 cup grated Parmesan cheese"
+			]
+		},
+		{
+			uuid: "3",
+			id: 3,
+			title: "PESTO PENNE PASTA",
+			ingredients: [
+				"1 pound dry penne pasta",
+				"2 cups fresh basil leaves",
+				"2 cloves garlic",
+				"1/2 cup pine nuts",
+				"1/2 cup grated Parmesan cheese",
+				"1/2 cup extra-virgin olive oil",
+				"1/2 cup grated Pecorino Romano cheese",
+				"Salt and black pepper to taste",
+				"Cherry tomatoes for garnish (optional)"
+			]
+		},
+		{
+			uuid: "4",
+			id: 4,
+			title: "FETTUCCINE ALFREDO",
+			ingredients: [
+				"8 ounces fettuccine pasta",
+				"1/2 cup unsalted butter",
+				"1 cup heavy cream",
+				"1 cup grated Parmesan cheese",
+				"1/4 cup chopped fresh parsley",
+				"Salt and black pepper to taste",
+				"Nutmeg (optional, for flavor)"
+			]
+		},
+		{
+			uuid: "5",
+			id: 5,
+			title: "CHEESY TORTELLINI",
+			ingredients: [
+				"1 pound cheese tortellini",
+				"2 cups marinara sauce",
+				"1 cup shredded mozzarella cheese",
+				"1/2 cup grated Parmesan cheese",
+				"1/4 cup fresh basil leaves, chopped",
+				"1/4 teaspoon red pepper flakes (optional, for a little heat)",
+				"Salt and black pepper to taste"
+			]
+		},
+		{
+			uuid: "6",
+			id: 6,
+			title: "CHEESY TORTELLINI",
+			ingredients: [
+				"1 pound cheese tortellini",
+				"2 cups marinara sauce",
+				"1 cup shredded mozzarella cheese",
+				"1/2 cup grated Parmesan cheese",
+				"1/4 cup fresh basil leaves, chopped",
+				"1/4 teaspoon red pepper flakes (optional, for a little heat)",
+				"Salt and black pepper to taste"
+			]
+		},
+		{
+			uuid: "7",
+			id: 7,
+			title: "SHRIMP ALFREDO PASTA",
+			ingredients: [
+				"8 ounces fettuccine pasta",
+				"1 pound large shrimp, peeled and deveined",
+				"2 tablespoons butter",
+				"2 cloves garlic, minced",
+				"1 cup heavy cream",
+				"1 cup grated Parmesan cheese",
+				"1/4 cup fresh parsley, chopped",
+				"Salt and black pepper to taste",
+				"Red pepper flakes (optional, for some heat)",
+
 			]
 		}
 	];
@@ -62,6 +139,7 @@ const Recipe = () => {
 							</li>
 						)}
 					</ul>
+					
 					<button onClick={() => navigate("/")}>Back</button>
 				</div>}
 		</div>
