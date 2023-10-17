@@ -9,7 +9,7 @@
   text-transform: uppercase;
 }
 
-.form > input {
+.form>input {
   width: 30%;
   padding: 10px;
   margin-left: 910px;
@@ -78,3 +78,10 @@ svg text {
 }
 
 /* .wrapper {background-color: #FFFFFF}; */
+
+@media (min-width: 375px) and (max-width: 667px) {
+  .company {
+    margin-left: 32px;
+  }
+
+}
