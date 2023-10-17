@@ -34,6 +34,16 @@
 			"id": "7",
 			"imageUrl": "/images/spaghetti-and-meatballs.jpg",
 			"dishName": "SPAGHETTI MEATBALLS"
+		},
+		{
+			"id": "8",
+			"imageUrl": "https://images.unsplash.com/photo-1616578492900-ea5a8fc6c341?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8OSUzQTE2fGVufDB8fDB8fHww&w=500",
+			"dishName": "SPAGHETTI BOLOGNESE"
+		},
+		{
+			"id": "8",
+			"imageUrl": "https://images.unsplash.com/photo-1616578492900-ea5a8fc6c341?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8OSUzQTE2fGVufDB8fDB8fHww&w=500",
+			"dishName": "SPAGHETTI BOLOGNESE"
 		}
 	]
 }

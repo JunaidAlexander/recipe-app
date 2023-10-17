@@ -87,24 +87,11 @@ const Recipe = () => {
 				"Salt and black pepper to taste"
 			]
 		},
+
 		{
 			uuid: "6",
 			id: 6,
-			title: "CHEESY TORTELLINI",
-			ingredients: [
-				"1 pound cheese tortellini",
-				"2 cups marinara sauce",
-				"1 cup shredded mozzarella cheese",
-				"1/2 cup grated Parmesan cheese",
-				"1/4 cup fresh basil leaves, chopped",
-				"1/4 teaspoon red pepper flakes (optional, for a little heat)",
-				"Salt and black pepper to taste"
-			]
-		},
-		{
-			uuid: "7",
-			id: 7,
-			title: "SHRIMP ALFREDO PASTA",
+			title: "Shrimp Alfredo Pasta",
 			ingredients: [
 				"8 ounces fettuccine pasta",
 				"1 pound large shrimp, peeled and deveined",
@@ -114,8 +101,30 @@ const Recipe = () => {
 				"1 cup grated Parmesan cheese",
 				"1/4 cup fresh parsley, chopped",
 				"Salt and black pepper to taste",
-				"Red pepper flakes (optional, for some heat)",
+				"Red pepper flakes (optional, for some heat)"
+			]
+		},
 
+		{
+			uuid: "7",
+			id: 7,
+			title: "SPAGHETTI MEATBALLS",
+			ingredients: [
+				"8 ounces spaghetti pasta",
+				"1/2 pound ground beef",
+				"1/2 pound ground pork",
+				"1/4 cup breadcrumbs",
+				"1/4 cup grated Parmesan cheese",
+				"1/4 cup milk",
+				"1/4 cup chopped fresh parsley",
+				"1/4 cup finely chopped onion",
+				"1 egg",
+				"1 clove garlic, minced",
+				"Salt and black pepper to taste",
+				"1 (24-ounce) jar of spaghetti sauce",
+				"1/4 teaspoon dried basil",
+				"1/4 teaspoon dried oregano",
+				"1/4 teaspoon crushed red pepper flakes (optional, for some heat)"
 			]
 		}
 	];
@@ -139,7 +148,7 @@ const Recipe = () => {
 							</li>
 						)}
 					</ul>
-					
+
 					<button onClick={() => navigate("/")}>Back</button>
 				</div>}
 		</div>
