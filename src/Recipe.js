@@ -157,7 +157,7 @@ const Recipe = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       {selectedRecipe && (
         <div className="recipe-details">
           <h2>{selectedRecipe.title}</h2>
