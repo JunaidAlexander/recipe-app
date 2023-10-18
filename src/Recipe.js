@@ -17,7 +17,7 @@ const Recipe = () => {
     {
       uuid: "1",
       id: 1,
-      title: "Baked Gnocchi",
+      title: "BAKED GNOCCHI",
       ingredients: [
         "1 pound of gnocchi",
         "1 (26 ounce) jar of tomato sauce",
@@ -30,7 +30,7 @@ const Recipe = () => {
     {
       uuid: "2",
       id: 2,
-      title: "Pasta & Sausage",
+      title: "PASTA & SAUSAGE",
       ingredients: [
         "1 pound dry penne pasta",
         "1 pound Italian sausage",
@@ -44,7 +44,7 @@ const Recipe = () => {
     {
       uuid: "3",
       id: 3,
-      title: "Pesto Penne Pasta",
+      title: "PESTO PENNE PASTA",
       ingredients: [
         "1 pound dry penne pasta",
         "2 cups fresh basil leaves",
@@ -89,7 +89,7 @@ const Recipe = () => {
     {
       uuid: "6",
       id: 6,
-      title: "Shrimp Alfredo Pasta",
+      title: "SHRIMP ALFREDO PASTA",
       ingredients: [
         "8 ounces fettuccine pasta",
         "1 pound large shrimp, peeled and deveined",
@@ -128,7 +128,7 @@ const Recipe = () => {
     {
       uuid: "8",
       id: 8,
-      title: "Spaghetti Carbonara",
+      title: "SPAGHETTI CARBONARA",
       ingredients: [
         "1 pound of spaghetti",
         "2 eggs",
@@ -140,7 +140,7 @@ const Recipe = () => {
     {
       uuid: "9",
       id: 9,
-      title: "Marscarpone Pesto Pasta",
+      title: "MARSCARPONE PESTO PASTA",
       ingredients: [
         "Pasta of your choice",
         "1 cup of marscarpone cheese",
@@ -162,7 +162,7 @@ const Recipe = () => {
         <div className="recipe-details">
           <h2>{selectedRecipe.title}</h2>
           <p>
-            <strong>Ingredients</strong>
+            <strong>What You'll Need</strong>
           </p>
           <ul>
             {selectedRecipe.ingredients.map((ingredient, index) => (
