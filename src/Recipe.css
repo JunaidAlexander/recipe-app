@@ -1,5 +1,6 @@
 .recipe-details {
   display: grid;
+<<<<<<< HEAD
   place-items: center; /* This shorthand property centers the content both horizontally and vertically */
   /* width: 100vw;
   height: 100vh; */
@@ -7,7 +8,15 @@
   font-family: "Roboto", sans-serif;
   margin: 0px 500px;
   border-radius: 20px;
+=======
+  place-items: center;
+  background-color: lightgray;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+>>>>>>> 5876a8b180ee81b0064298c3265a93a6560407e6
 }
+
 .butn {
   background-color: #ba704f;
   color: black;
@@ -15,6 +24,7 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
+<<<<<<< HEAD
   margin-bottom: 120px;
   margin-top: 45px;
 }
@@ -25,3 +35,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+=======
+  margin-bottom: 150px;
+  margin-top: 35px;
+}
+>>>>>>> 5876a8b180ee81b0064298c3265a93a6560407e6
